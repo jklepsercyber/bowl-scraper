@@ -1,0 +1,9 @@
+aiohttp
+asyncio
+collections
+datetime
+json
+requests
+re
+sqlite3
+websockets
