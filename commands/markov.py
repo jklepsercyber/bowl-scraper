@@ -3,8 +3,8 @@ from requests_toolbelt.utils import dump
 
 # This script should be run in order to update your command with new names/descrptions/options.
 
-url = ["https://discord.com/api/v8/applications/901341489559396395/guilds/901343958964244480/commands", #guild ID is for Alpha Playground
-    "https://discord.com/api/v8/applications/901341489559396395/guilds/161001009987059712/commands"] #guild ID is for Shitpost Alpha
+url = ["https://discord.com/api/v8/applications/<appidhere>/guilds/<guildidhere>/commands",
+      "https://discord.com/api/v8/applications/<appidhere>/guilds/<guildidhere>/commands"] # place as many urls as you like here
 
 req_json = {
     "name": "markov_generate",
@@ -27,7 +27,7 @@ req_json = {
 }
 # For authorization, you can use either your bot token
 headers = {
-    "Authorization": "Bot OTAxMzQxNDg5NTU5Mzk2Mzk1.YXOdrQ.F3Xg7jAiJ41OyvNvsaK4eQ2a8mM"
+    "Authorization": "Bot <yourtokenhere>"
 }
 
 def main():
